@@ -47,4 +47,13 @@ describe('accessors', function(){
     assert(state.foo === 'bar');
   })
 
+  it('should get nested properties', function(){
+    var state = new Model({
+      foo: {
+        bar: 'baz'
+      }
+    });
+    assert( state.foo.bar === 'baz' );
+  })
+
 });
