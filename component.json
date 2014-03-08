@@ -5,9 +5,6 @@
   "version": "0.0.1",
   "keywords": [],
   "license": "MIT",
-  "dependencies": {
-    "component/clone": "0.2.0"
-  },
   "development": {
     "component/assert": "*",
     "ripplejs/model": "*"
