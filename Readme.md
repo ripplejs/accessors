@@ -1,4 +1,3 @@
-
 # accessors
 
   Plugin for model for nice getters and setters
@@ -8,7 +7,7 @@
 
   Install with [component(1)](http://component.io):
 
-    $ component install segmentio/accessors
+    $ component install ripplejs/accessors
 
 ## API
 
