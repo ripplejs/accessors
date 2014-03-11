@@ -34,10 +34,20 @@ describe('accessors', function(){
     state.foo = 'baz';
   });
 
-  it('should not have accessors if not defined when created', function(){
+  it('should have accessors if not defined when created', function(){
     var state = new Model();
     state.set('foo', 'bar');
-    assert(state.foo == null);
+    assert(state.foo === 'bar');
+  })
+
+  it('should have accessors if set is called with an object', function(){
+    var state = new Model();
+    state.set({
+      foo: 'bar',
+      bar: 'foo'
+    });
+    assert(state.foo === 'bar');
+    assert(state.bar === 'foo');
   })
 
   it('should update the accessors', function(){
